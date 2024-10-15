@@ -10,5 +10,8 @@ let studentProfile = {
 let additionalHobbies = ["Painting", "Yoga"];
 
 // Start coding here
-
+const newStudentProfile = {
+  ...studentProfile,
+  ...studentProfile.hobbies.push(...additionalHobbies),
+};
 console.log(newStudentProfile);
